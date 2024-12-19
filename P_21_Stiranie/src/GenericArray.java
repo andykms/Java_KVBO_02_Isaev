@@ -43,12 +43,16 @@ public class GenericArray<T> {
 
     public static void main(String[] args) {
         // Пример использования класса для хранения массива целых чисел
+
+        //ЗАДАНИЕ 1 - ХРАНЕНИЕ НЕСКОЛЬКИХ ТИПОВ
         GenericArray<Integer> intArray = new GenericArray<>(5);
         intArray.add(1);
         intArray.add(2);
         intArray.add(3);
         System.out.println("Массив целых чисел: " + intArray);
         //Получение значения, задание 3
+
+        //ЗАДАНИЕ 3 - ПОЛУЧЕНИЕ ЭЛЕМЕНТА ПО ИНДЕКСУ
         System.out.println("Нулевой элемент:" + intArray.get(0));
         // Пример использования класса для хранения массива строк
         GenericArray<String> stringArray = new GenericArray<>(3);

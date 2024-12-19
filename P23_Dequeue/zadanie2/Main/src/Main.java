@@ -1,3 +1,6 @@
+//ЗАДАНИЕ 2 - Очередь на связанном списке
+
+
 public class Main {
     public static void main(String[] args) {
         Queue<String> queue = new LinkedQueue<>();

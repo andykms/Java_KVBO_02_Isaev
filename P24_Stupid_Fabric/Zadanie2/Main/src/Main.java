@@ -1,3 +1,5 @@
+//ЗАДАНИЕ 1 -  UML диаграмма
+
 public class Main {
     public static void main(String[] args) {
         // Создаем фабрику

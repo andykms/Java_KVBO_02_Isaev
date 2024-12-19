@@ -1,5 +1,6 @@
 import java.util.PriorityQueue;
 
+//ЗАДАНИЕ 2 - ТЕСТИРОВАНИЕ ФУНКЦИИ
 class PriorityQueueExample {
     public static void main(String[] args) {
         HashTable<String, String> hashTable = new HashTable<>(10);
@@ -17,11 +18,11 @@ class PriorityQueueExample {
         hashTable.add("key10", "value10");
 
         // Поиск элемента
-        System.out.println("Lookup key3: " + hashTable.lookup("key3")); // value3
+        System.out.println("key3: " + hashTable.lookup("key3")); // value3
 
         // Удаление элемента
         hashTable.delete("key3");
-        System.out.println("Lookup key3 after deletion: " + hashTable.lookup("key3")); // null
+        System.out.println("key3 после удаления: " + hashTable.lookup("key3")); // null
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
 
         // Добавление 10 элементов в очередь с приоритетом
@@ -38,9 +39,9 @@ class PriorityQueueExample {
 
         // Извлечение и вывод нескольких элементов
         System.out.println("Извлечение элементов из очереди с приоритетом:");
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.println(priorityQueue.poll()); // Выводит элементы в порядке их приоритета
         }
-
+        
     }
 }

@@ -1,3 +1,5 @@
+//ЗАДАНИЕ 1 - Реализовать очередь на массиве
+
 public class Main {
     public static void main(String[] args) {
         // Использование ArrayQueueModule

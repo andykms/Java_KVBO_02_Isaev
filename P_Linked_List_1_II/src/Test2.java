@@ -1,5 +1,6 @@
 import java.util.*;
 
+//ЗАДАНИЕ 2 - КЛАСС ТЕСТЕР ДЛЯ ДВУСВЯЗНОГО СПИСКА
 public class Test2 {
     public static void main(String[] args) {
         __TwoWayLinkedList Arr1 = new __TwoWayLinkedList();

@@ -1,11 +1,13 @@
 // Обобщенный класс с тремя параметрами T, V, K
-class Triple<T, V, K> {
+
+//ЗАДАНИЕ 2
+class Triple2<T, V, K> {
     private T first;  // Первое значение
     private V second; // Второе значение
     private K third;  // Третье значение
 
     // Конструктор
-    public Triple(T first, V second, K third) {
+    public Triple2(T first, V second, K third) {
         this.first = first;
         this.second = second;
         this.third = third;
@@ -26,6 +28,13 @@ class Triple<T, V, K> {
         return third;
     }
 
+    // Метод для вывода имен классов переменных
+    public void printClassNames() {
+        System.out.println("Тип первого значения: " + first.getClass().getName());
+        System.out.println("Тип второго значения: " + second.getClass().getName());
+        System.out.println("Тип третьего значения: " + third.getClass().getName());
+    }
+
     // Переопределение метода toString для удобного отображения
     @Override
     public String toString() {
@@ -41,7 +50,7 @@ class Triple<T, V, K> {
 public class Main {
     public static void main(String[] args) {
         // Создание экземпляра обобщенного класса Triple
-        Triple<Integer, String, Double> triple = new Triple<>(1, "Hello", 3.14);
+        Triple2<Integer, String, Double> triple = new Triple2<>(1, "Hello", 3.14);
 
         // Получение значений
         Integer firstValue = triple.getFirst();
@@ -53,20 +62,10 @@ public class Main {
         System.out.println("Второе значение: " + secondValue);
         System.out.println("Третье значение: " + thirdValue);
 
+        // Вывод имен классов переменных
+        triple.printClassNames();
+
         // Вывод всего объекта
         System.out.println(triple);
     }
 }
-
-/*Описание кода:
-Класс Triple<T, V, K>: Обобщенный класс, который принимает три параметра типа T, V и K. Он содержит три приватных поля для хранения значений этих типов.
-
-Конструктор: Конструктор класса принимает три аргумента и инициализирует соответствующие поля.
-
-Методы доступа: Методы getFirst(), getSecond() и getThird() позволяют получить значения, хранящиеся в объекте.
-
-Переопределение метода toString(): Этот метод возвращает строковое представление объекта Triple, что позволяет легко выводить его содержимое.
-
-Пример использования: В классе Main создается экземпляр класса Triple, который хранит значения различных типов (целое число, строку и число с плавающей запятой). Затем выводятся значения и сам объект.
-
-Этот код демонстрирует, как можно использовать обобщенные классы для хранения значений различных типов в одном объекте.*/

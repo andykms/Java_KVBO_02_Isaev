@@ -1,5 +1,6 @@
 import java.util.LinkedList;
 
+//ЗАДАНИЕ 1 - КЛАСС С ФУНКЦИЯМИ ХЭЩ-ТАБЛИЦЫ
 class HashTable<K, V> {
     private static class Entry<K, V> {
         K key;

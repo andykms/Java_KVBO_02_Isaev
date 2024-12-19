@@ -1,3 +1,5 @@
+//ЗАДАНИЕ 2 - РАЗЛИЧНЫЕ ТИПЫ СТУЛЬЕВ
+
 public class Main {
     public static void main(String[] args) {
         ChairFactory victorianFactory = new VictorianChairFactory();

@@ -1,5 +1,6 @@
 import java.util.*;
 
+//ЗАДАНИЕ 1 - КЛАСС ТЕСТЕР ДЛЯ КЛАССА ОДНОСВЯЗНОГО СПИСКА
 public class Test1 {
   public static void main(String[] args) {
     __LinkedList Arr1 = new __LinkedList();
